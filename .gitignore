@@ -212,3 +212,7 @@ labs/lab_2/images_lab/
 # Ignorar archivos .pickle (por lab_4):
 *.pickle
 *.pkl
+
+# Ignorar archivos .xlsx y .csv (por lab_6):
+*.xlsx
+*.csv
