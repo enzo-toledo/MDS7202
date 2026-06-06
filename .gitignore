@@ -216,3 +216,7 @@ labs/lab_2/images_lab/
 # Ignorar archivos .xlsx y .csv (por lab_6):
 *.xlsx
 *.csv
+
+# Ignorar carpetas asociadas a MLflow (por lab_8):
+mlruns/
+models/
