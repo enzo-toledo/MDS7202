@@ -220,3 +220,6 @@ labs/lab_2/images_lab/
 # Ignorar carpetas asociadas a MLflow (por lab_8):
 mlruns/
 models/
+
+# lab_9:
+labs/lab_9/data/
