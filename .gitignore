@@ -223,3 +223,7 @@ models/
 
 # lab_9:
 labs/lab_9/data/
+
+# lab_10:
+labs/lab_10/papers/
+labs/lab_10/faiss_index/
