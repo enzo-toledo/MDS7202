@@ -231,3 +231,9 @@ labs/lab_10/faiss_index/
 # Proyecto final:
 proyecto_final/data/
 chaucherapp.jpg
+
+
+# Parte2:
+proyecto_final/mlflow.db
+proyecto_final/.cache_pipelines/
+proyecto_final/imagenes/
