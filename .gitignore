@@ -236,4 +236,10 @@ chaucherapp.jpg
 # Parte2:
 proyecto_final/mlflow.db
 proyecto_final/.cache_pipelines/
-proyecto_final/imagenes/
+
+# Parte3:
+# el .env ya esta en el gitignore.
+# Por solicitud de enunciado, se dejaran algunas imagenes subidas en el repositorio. (solo las obligatorias)
+proyecto_final/imagenes/optuna_parallel_coordinate.png
+proyecto_final/imagenes/permutation_importance_test_Base_BoW.png
+proyecto_final/imagenes/permutation_importance_test_Embeddings.png
