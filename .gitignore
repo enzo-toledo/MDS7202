@@ -227,3 +227,19 @@ labs/lab_9/data/
 # lab_10:
 labs/lab_10/papers/
 labs/lab_10/faiss_index/
+
+# Proyecto final:
+proyecto_final/data/
+chaucherapp.jpg
+
+
+# Parte2:
+proyecto_final/mlflow.db
+proyecto_final/.cache_pipelines/
+
+# Parte3:
+# el .env ya esta en el gitignore.
+# Por solicitud de enunciado, se dejaran algunas imagenes subidas en el repositorio. (solo las obligatorias)
+proyecto_final/imagenes/optuna_parallel_coordinate.png
+proyecto_final/imagenes/permutation_importance_test_Base_BoW.png
+proyecto_final/imagenes/permutation_importance_test_Embeddings.png

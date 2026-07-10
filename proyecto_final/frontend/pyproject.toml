@@ -1,0 +1,14 @@
+[project]
+name = "chaucherapp-frontend"
+version = "0.1.0"
+description = "Frontend Gradio para la priorización de tickets de ChaucherApp"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+    "gradio>=5.0,<6.0",
+    "requests>=2.32",
+]
+
+# Este proyecto es una aplicación, no una librería instalable: le decimos a uv
+# que no intente construir/empaquetar el propio directorio, solo las dependencias.
+[tool.uv]
+package = false

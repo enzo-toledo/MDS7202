@@ -1,0 +1,42 @@
+services:
+  backend:
+    build: ./backend
+    image: chaucherapp-backend
+    container_name: chaucherapp-backend
+    # Toma las variables (GOOGLE_API_KEY) desde el .env del backend.
+    # El .env NO está en la imagen; se inyecta aquí, a nivel de contenedor.
+    env_file:
+      - ./backend/.env
+    ports:
+      - "8000:8000"
+    volumes:
+      # Monta el código: no hay que reconstruir la imagen con cada cambio.
+      - ./backend:/app
+      # Volumen anónimo que preserva el .venv del build (el montaje de arriba
+      # no lo pisa). Sin esto, /app/.venv quedaría oculto por el bind mount.
+      - /app/.venv
+    networks:
+      - chaucher-net
+
+  frontend:
+    build: ./frontend
+    image: chaucherapp-frontend
+    container_name: chaucherapp-frontend
+    environment:
+      # El frontend llama al backend por el nombre del servicio en la red interna,
+      # no por localhost.
+      - BACKEND_URL=http://backend:8000
+    ports:
+      - "7860:7860"
+    volumes:
+      - ./frontend:/app
+      - /app/.venv
+    depends_on:
+      - backend
+    networks:
+      - chaucher-net
+
+# Red interna que comunica ambos contenedores
+networks:
+  chaucher-net:
+    driver: bridge
